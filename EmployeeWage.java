@@ -1,0 +1,28 @@
+package Bridgelabz.Employeewg;
+
+public class EmployeeWage {
+
+        public static void main(String[] args) {
+            int FULL_TIME = 1;
+            int Emp_RATE_PER_Hr=20;
+
+            int empHrs=0;
+            int empWage=0;
+            double empcheck=Math.floor(Math.random()* 10)% 2;
+
+            if(empcheck== FULL_TIME)
+            {
+                empHrs=8;
+            }
+            else
+            {
+                empHrs=0;
+
+            }
+            empWage=empHrs * Emp_RATE_PER_Hr;
+            System.out.println("Employee Wage : " + empWage);
+
+        }
+    }
+
+
