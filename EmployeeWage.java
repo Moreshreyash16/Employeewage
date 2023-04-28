@@ -3,18 +3,32 @@ package Bridgelabz.Employeewg;
 public class EmployeeWage {
 
     public static void main(String[] args) {
+        final int PART_TIME=1;
+        final int FULL_TIME=2;
+        final int Emp_RATE_PER_HR=20;
 
+        int EmpHr=0;
+        int EmpWage=0;
+        int empcheck= (int) (Math.floor(Math.random()* 10 )% 3);
 
-        int FULL_TIME = 1;
-        double empcheck = Math.floor(Math.random() * 10) % 2;
+        switch(empcheck)
+        {
+            case PART_TIME:
+                EmpHr=4;
+                break;
 
-        if (empcheck == FULL_TIME) {
-            System.out.println("Employee is Present");
-        } else {
-            System.out.println("Employee is Absent");
+            case FULL_TIME:
+                EmpHr=8;
+                break;
+
+            default:
+                EmpHr=0;
         }
+        EmpWage=EmpHr*Emp_RATE_PER_HR;
+        System.out.println("Employee Wage : " + EmpWage);
 
 
     }
 }
+
 
