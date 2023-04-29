@@ -26,6 +26,7 @@ public class EmployeeWage {
         }
         EmpWage=EmpHr*Emp_RATE_PER_HR;
         System.out.println("Employee Wage : " + EmpWage);
+        System.out.println("uc3");
 
 
     }
