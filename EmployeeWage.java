@@ -2,7 +2,6 @@
 package Bridgelabz.Employeewg;
 
 public class EmployeeWage {
-
     public static void main(String[] args) {
         final int PART_TIME=1;
         final int FULL_TIME=2;
@@ -27,10 +26,7 @@ public class EmployeeWage {
         }
         EmpWage=EmpHr*Emp_RATE_PER_HR;
         System.out.println("Employee Wage : " + EmpWage);
-        System.out.println("uc3");
-
-
-    }
+}
 }
 
 
