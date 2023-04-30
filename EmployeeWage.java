@@ -1,5 +1,6 @@
 
 package Bridgelabz.Employeewg;
+
 public class EmployeeWage {
 
     public static final int PART_TIME = 1;
@@ -8,7 +9,7 @@ public class EmployeeWage {
     public static final int NUM_OF_WORKING_DAYS=20;
     public static final int MAX_HR_IN_MONTH=100;
 
-    public static void main(String[] args) {
+    public  void computeWage() {
         int EmpHr = 0;
         int day=1;
         int Total_Emp_Hr=0;
@@ -25,7 +26,7 @@ public class EmployeeWage {
                     EmpHr = 4;
                     break;
 
-                case gitFULL_TIME:
+                case FULL_TIME:
                     EmpHr = 8;
                     break;
 
@@ -43,6 +44,11 @@ public class EmployeeWage {
             day++;
         }
         System.out.println("Toatal Emp Wage : " + totalEmpWage);
+    }
+
+    public static void main(String[] args) {
+        EmployeeWage cw=new EmployeeWage();
+        cw.computeWage();
     }
 }
 
